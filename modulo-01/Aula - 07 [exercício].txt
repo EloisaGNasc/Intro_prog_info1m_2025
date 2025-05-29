@@ -1,7 +1,16 @@
-Algoritmo (subtração, multiplicação e divisão)
+Algoritmo resolvendo operações (subtração, multiplicação e divisão)
 
 Q1- Realize a subtração de dois números inteiros 'x' e 'y':
-(1) read [x]
-(1) read [y]
-(2) [resultado] = [x] . [y]
-(3) show [resultado]
+
+(1) entrada: dois números inteiros.
+(2) saída: resultado da subtração.
+(3) processamento: cálculo da subtração de 'x' menos 'y'
+
+1. read [x]
+1. read [y]
+2. [resultado] = [x] - [y]
+3. show [resultado]
+
+Q2- Realize a multiplicação de 'p' e 'd'
+
+
