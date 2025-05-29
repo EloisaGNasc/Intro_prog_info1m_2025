@@ -1,0 +1,7 @@
+Algoritmo (subtração, multiplicação e divisão)
+
+Q1- Realize a subtração de dois números inteiros 'x' e 'y':
+(1) read [x]
+(1) read [y]
+(2) [resultado] = [x] . [y]
+(3) show [resultado]
