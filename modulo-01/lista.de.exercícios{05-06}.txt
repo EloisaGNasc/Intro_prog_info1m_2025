@@ -1,3 +1,21 @@
-1-soma de dois números:
+1- soma de dois números:
+LN
+-leia o valor de 'a'
+-leia o valor de 'b'
+-o resultado é igual a soma de 'a' mais 'b'
+REF.
+-read [a]
+-read [b]
+-show [resultado]=[a]+[b]
 
-
+2- média aritmética
+LN
+-leia o valor de 'm'
+-leia o valor de 'n'
+-leia o valor de 'o'
+-o resultado da média é a soma dos números dividida pela quantidade de números.
+REF.
+-read [m]
+-read [n]
+-read [o]
+-show [resultado]
