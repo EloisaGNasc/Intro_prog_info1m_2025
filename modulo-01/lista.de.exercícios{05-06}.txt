@@ -1,116 +1,264 @@
-1- soma de dois números:
-leia dois números inteiros e exiba a soma deles
-LN
--leia o valor de 'a'
--leia o valor de 'b'
--o resultado é igual a soma de 'a' mais 'b'
-REF.
--read [a]
--read [b]
--[resultado]= [a]+[b]
--show [resultado]
+1- Soma de dois números:----
+Leia dois números inteiros e exiba a soma deles.
 
-2- média aritmética:
-leia três números reais e exiba a média aritmética
-LN
--leia o valor de 'm'
--leia o valor de 'n'
--leia o valor de 'o'
--o resultado da média é a soma dos números dividida pela quantidade de números.
-REF.
--read [m]
--read [n]
--read [o]
--[resultado]= (m+n+o)/3
--show [resultado]
+entrada: dois números inteiros
+saída: resultado da soma
+processamento: [x]+[y]
 
-3- área de um retângulo:
-leia a base e a altura de um retângulo e calcule sua área
-LN
--leia o valor de 'j'
--leia o valor de 'k'
--multiplique o valor de 'j' por 'k'
--a área do retângulo será o resultado da multiplicação
-REF.
--read [j]
--read [k]
--[resultado]= [j].[k]
--show [resultado]
+Ref.
+read [x]
+read [y]
+[resultado]=[x]+[y]
+show [resultado]
 
-4- área de um triângulo:
-leia a base e a altura de um triângulo e calcule a área usando a fórmula: (base.altura)/2
-LN
--leia o valor de 'b'
--leia o valor de 'a'
--faça a multiplicação dos valores 'b' e 'a'
--divida o resultado da soma por dois
--a área do triângulo será o resultado da divisão
-REF.
--read [b]
--read [a]
--[resultado]=(b.a)/2
--show [resultado]
+2. Média aritmética de três números: ----
+Leia três números reais e exiba a média aritmética.
 
-5- conversão de temperatura:
-leia uma temperatura em celsius e converta para fahrenheit usando a fórmula: (9°c+160)/5
-LN
--leia o valor 'x' da temperatura em celsius
--some o valor com 160
--divida o resultado da soma por 5
--a temperatura em fahrenheit será o resultado da divisão
-REF.
--read [x]
--[resultado]=(x+160)/5
--show [resultado]
-6- média ponderada de três notas:
-leia três notas e seus respectivos pesos e calcule a média ponderada
-LN
--leia o valor 'e'
--leia o valor 'f'
--leia o valor 'g'
--para a prova 1, peso 2
--para a prova 2, peso 4
--para a prova 3, peso 6
--multiplique cada nota, pelo seu respectivo peso
--some os valores das multiplicações
--divida o resultado da soma pelo resultado da soma de todos os pesos
--a média ponderada será o resultado da divisão
-REF.
--read [e]
--read [f]
--read [g]
--1° peso [2]
--2° peso [4]
--3° peso [6]
--some [e], [f] e [g]
--[resultado]=((e.2)+(f.4)+(g.6))/12
--show [resultado]
+ entrada: três números inteiros
+saída: média aritmética
+processamento: (a+b+c)/3
 
-7- volume de uma caixa retangular:
-leia o comprimento, a largura e a altura de uma caixa e calcule seu volume
-LN
--leia o valor 'c'
--leia o valor 'l'
--leia o valor 'a'
--multiplique os três valores
--o volume será igual ao resultado da multiplicação
-REF.
--read [c]
--read [l]
--read [a]
--[resultado]=[c].[l].[a]
--show [resultado]
+Ref.
+read [a]
+read [b]
+read [c]
+[média aritmética]=([a]+[b]+[c]/3)
+show [média aritmética]
 
-8-valor total da compra:
-leia o preço de três produtos e exiba o valor total da compra
--leia o valor 'w'
--leia o valor 's'
--leia o valor 'd'
--some os três valores
--o resultado da compra será igual ao resultado da soma
-REF.
--read [w]
--read [s]
--read [d]
--[resultado]=[w]+[s]+[d]
--show [resultado]
+3. Área de um retângulo: ----
+Leia a base e a altura de um retângulo e calcule sua área.
+
+entrada: tam. base e tam. altura
+saída: área do retângulo
+processamento: (base*altura)
+
+Ref.
+read [base]
+read [altura]
+[área]=[base]*[altura]
+
+4. Área de um triângulo: ----
+Leia a base e a altura de um triângulo e calcule a área utilizando a fórmula:
+área = (base * altura) / 2.
+
+entrada: tam. base e tam. altura
+saída: área do triângulo
+processamento: (base * altura) / 2.
+
+Ref.
+read [base]
+read [altura]
+[área]=([base]*[altura])/2
+
+5. Conversão de temperatura: ----
+Leia uma temperatura em Celsius e converta para Fahrenheit usando a fórmula:
+F = (9 * C + 160) / 5.
+
+entrada: temperatura em Celsius
+saída: temperatura em Fahrenheit
+processamento: F = (9 * 'Celcius' + 160)/5
+
+Ref.
+read [Celcius]
+[Fahrenheit]=(9*[celcius]+160)/5
+show [Fahrenheit]
+
+6. Média ponderada de três notas: ----
+Leia três notas e seus respectivos pesos e calcule a média ponderada.
+ 
+entrada: três notas e três pesos
+saída: média ponderada
+processamento: (N1*P1)+(N2*P2)+(N3*P3)/(P1+P2+P3)
+
+Ref.
+Read [N1], [N2], [N3]
+Read [P1], [P2], [P3]
+[média ponderada]=([N1]*[P1])+([N2]*[P2])+([N3]*[P3])/([P1]+[P2]+[P3])
+
+7. Volume de uma caixa retangular: ----
+Leia o comprimento, a largura e a altura de uma caixa e calcule seu volume.
+
+entrada: comprimento, largura e altura da caixa
+saída: volume da caixa
+processamento: (comprimento*largura*altura)
+
+Ref.
+read [comprimento]
+read [largura]
+read [altura]
+[volume]=[comprimento]*[largura]*[altura]
+show [volume]
+
+8. Valor total da compra: ----
+Leia o preço de três produtos e exiba o valor total da compra.
+
+entrada: três preços
+saída: valor total
+processamento: (P1+P2+ P3)
+
+Ref.
+read [P1]
+read [P2]
+read [P3]
+[valor total]=[P1]+[P2]+[P3]
+show [valor total]
+
+9. Tempo total de uma viagem: ---- 
+Leia o tempo gasto em horas e a velocidade média. Calcule a distância total (velocidade × tempo) e o tempo total em minutos.
+
+entrada: tempo, velocidade
+saída: tempo em minutos
+processamento: (velocidade*tempo)
+
+Ref.
+read [tempo]
+read [velocidade]
+[distância]=[tempo]*[velocidade]
+[tempo.minutos]=[tempo]*60
+show [distância] e [tempo.minutos]
+
+10. Conversão de dias em horas: ----
+Leia um número de dias e converta para horas (1 dia = 24 horas).
+
+entrada: determinada quant. de dias
+saída: conversão dos dias em horas
+processamento: (X dias*24 horas)
+
+Ref.
+[1 dia=24 horas]
+read [X dias]
+[conversão]=[X dias]*24h
+show [conversão]
+
+11. Conversão de minutos em segundos: ----
+Leia uma quantidade de minutos e converta para segundos.
+
+entrada: quant. de minutos
+saída: segundos
+processamento: (minutos*60)
+
+Ref.
+read [minutos]
+[resultado]=[minutos]*60
+show [resultado]
+
+12. Cálculo do novo salário: ----
+Leia um salário e um valor de aumento fixo. Exiba o novo salário.
+
+entrada: salário e aumento fixo
+saída: novo salário
+processamento: (salário+aumento)
+
+Ref.
+read [salário]
+read [aumento]
+[novo salário]=[salário]+[aumento]
+show [novo salário]
+
+13. Cálculo de juros simples: ----
+Leia capital, taxa de juros mensal e tempo em meses. Calcule o montante com juros simples:
+M = C + (C * i * t).
+entrada: capital, taxa de juros mensal, tempo em meses
+saída: montante
+processamento: (capital)+(capital * taxa de juros * tempo em meses)
+
+Ref.
+read [capital]
+read [taxa de juros]
+read [tempo em meses]
+[montante]=[capital]+([capital]*[taxa de juros]*[tempo em meses])
+show [montante]
+
+14. Troco de uma compra: ----
+Leia o valor da compra e o valor pago. Calcule o troco.
+
+entrada: valor da compra, valor pago
+saída: troco
+processamento: (valor pago - valor da compra)
+
+Ref.
+read [valor pago]
+read [valor da compra]
+[troco]=[valor pago]-[valor da compra]
+show [troco]
+
+15. Cálculo do IMC (Índice de Massa Corporal): ----
+Leia o peso (kg) e a altura (m), e calcule o IMC usando a fórmula:
+IMC = peso / (altura ** 2).
+
+entrada: peso e altura
+saída: IMC
+processamento: (peso / (altura*2))
+
+Ref.
+read [peso]
+read [altura]
+[IMC]=[peso]/([altura]*2)
+show [IMC]
+
+16. Perímetro de um círculo: ----
+Leia o raio de um círculo e calcule o perímetro:
+P = 2 * π * raio (use π = 3.14).
+
+entrada: raio
+saída: perímetro
+processamento: 2*π*raio
+
+Ref.
+read [raio]
+read [π =3,14]
+[perímetro]=2*π*[raio]
+show [perímetro]
+
+17. Diferença de idades: ----
+Leia duas idades e calcule a diferença entre elas.
+
+entrada: duas idades
+saída: diferença de idade
+processamento: (idade 1- idade 2)
+
+Ref.
+read [idade 1]
+read [idade 2]
+[diferença]=[idade 1]-[idade 2]
+show [diferença]
+
+18. Média de consumo de combustível: ----
+Leia a distância percorrida (km) e o total de combustível gasto (litros) e calcule a média de consumo:
+consumo = km / litros.
+
+entrada: distância percorrida (km), combustível gasto (litros)
+saída: média de consumo
+processamento: (km/litros)
+
+Ref.
+read [km]
+read [litros]
+[média de consumo]=[km]/[litros]
+show [média de consumo]
+
+19. Valor a pagar em conta dividida: ----
+Leia o valor total de uma conta e o número de pessoas. Calcule quanto cada uma deve pagar.
+
+entrada: valor de uma conta, número de pessoas
+saída: quanto cada pessoa deve pagar
+processamento: (valor da conta / pessoas)
+
+Ref.
+read [valor.conta]
+read [pessoas]
+[valor.pagar]=[valor.conta]/[pessoas]
+show [valor.pagar]
+
+20. Cálculo de desconto: ----
+Leia o valor de um produto e a porcentagem de desconto. Exiba o valor com desconto.
+
+entrada: valor de um produto, desconto(%)
+saída: valor com desconto
+processamento: (valor do produto* porcentagem de desconto)
+
+Ref.
+read [valor.produto]
+read [porcentagem.desconto]
+[valor.desconto]=[valor.produto]*[porcentagem.desconto]
+show [valor.desconto]
